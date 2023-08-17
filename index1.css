@@ -189,11 +189,14 @@ a {
   text-decoration: underline;
 } */
 .card-body .fullwidht {
-  display: block;
-  /* width: calc(100% +10px); */
-   margin-left: -10px;
-  margin-right: -10px;
+  width: 100px;
+  object-fit: contain;
 }
+
+.imgchange {
+  width: 100%;
+}
+
 .card-body p:first-child {
   margin-top: 0;
 }
@@ -318,7 +321,6 @@ a {
   }
   .sidebar {
     display: block;
-    /* display: none;  */
     width: 150px;
   }
 
