@@ -82,18 +82,18 @@ a {
   padding-left: 10px;
 }
 .sidebar a::before {
-  content: '';
+  content: "";
   display: inline-block;
   vertical-align: middle;
   width: 15px;
   height: 15px;
   background: url(assets/icons/baseline-home.svg) center center / contain
     no-repeat;
-  margin-top:-2px;
-  margin-right:25px;
+  margin-top: -2px;
+  margin-right: 25px;
   border: 1 px solid #dbdbdb;
-  opacity: .67;
-  transition: opacity .3s;
+  opacity: 0.67;
+  transition: opacity 0.3s;
 }
 .sidebar .sidebar-messages::before {
   background-image: url(assets/icons/messages-f.svg);
@@ -139,14 +139,13 @@ a {
   height: 250px;
 }
 
-
 .card {
   border: solid 1px #dbdbdb;
   background: #fff;
   border-radius: 3px;
   margin-bottom: 15px;
 }
-.card:last-child{
+.card:last-child {
   margin-bottom: 0;
 }
 
@@ -155,9 +154,11 @@ a {
   position: relative;
   display: flex;
 }
-.card-header-avatar{
+.card-header-avatar {
   /* padding-left: 65px; */
-
+}
+.avatar {
+  margin-right: 12px;
 }
 .card-avatar {
   position: absolute;
@@ -178,8 +179,8 @@ a {
 .card-body {
   padding: 0 10px 10px 10px;
 }
-.card-body a{
-  color: #34AAFF;
+.card-body a {
+  color: #34aaff;
   text-decoration: underline;
 }
 .card-body .fullwidht {
@@ -207,68 +208,70 @@ a {
   text-decoration: none;
 }
 .card-like::before,
-.card-comments::before{
-  content:'';
+.card-comments::before {
+  content: "";
   display: inline-block;
   height: 18px;
   height: 18px;
   vertical-align: middle;
   margin-right: 5px;
-  background: url(assets/icons/like.svg) center center /contain  no-repeat;
+  background: url(assets/icons/like.svg) center center / contain no-repeat;
 }
-.card-comments::before{
+.card-comments::before {
   background: url(assets/icons/comments.svg) center center/ contain;
 }
-.card-comments{
+.card-comments {
   margin-left: auto;
 }
-.sidebar-title{
-color: #000;
-font-size: 15px;
-margin-top: 30px;
-margin-bottom: 18px;
+.sidebar-title {
+  color: #000;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 18px;
 }
-.sidebar-title::after{
-  content: '';
+.sidebar-title::after {
+  content: "";
   display: block;
   height: 1px;
   width: 100%;
   background: #000;
   margin-top: 4px;
 }
-.friend{
+.friends {
   margin: 14px 0;
   display: flex;
 }
-.friend-body{
-  display: flex;
-  flex-direction: column;
+.friend-body {
+  flex-direction: row;
 }
-.friend-avatar{
+.friends-avatar {
   width: 73px;
   height: 73px;
   flex: none;
   margin-right: 10px;
 }
-.friend-name{
+.friend-name {
   display: block;
   font-weight: bold;
   color: #000;
   margin-bottom: 5px;
 }
-.friend-add{
+.friends-list {
+  display: flex;
+}
+.friend-add {
   display: block;
-font-size: 12px;
-color: #000;
-font-size: 15px;
-margin-top: auto;
+  font-size: 12px;
+  color: #000;
+  font-size: 15px;
+  margin-top: auto;
 }
 
-.friends-connections{
+.friend-connections {
   color: rgba(0, 0, 0, 0.38);
 }
-.friend-add::before{
-  content: '';
+.friend-add::before {
+  content: "";
   display: inline-block;
   vertical-align: middle;
   width: 18px;
@@ -302,13 +305,13 @@ margin-top: auto;
   }
   .sidebar {
     display: block;
-   /* display: none;  */
+    /* display: none;  */
     width: 180px;
   }
 
   .sidebar a {
-   width:100%;
-   margin-right: 70px; 
+    width: 100%;
+    margin-right: 70px;
   }
   .main {
     width: 100%;
